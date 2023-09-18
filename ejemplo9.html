@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mi primera página web en html5">
+    <meta name="keywords" content="web html5">
+    <meta name="author" content="Rosa Medina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo clase</title>
+    <!-- <script src="" defer></script> -->
+    <!-- <link rel="stylesheet" href=""> -->
+</head>
+<body>
+    <form name="formularioEjemplo" method="post" action="#" autocomplete enctype="multipart/form-data">
+        <input type="email" name="email" placeholder="Introduce tu correo" value="">        
+        <input type="tel" name="telefono" placeholder="+XX XXX XXXXXX" >
+        <input type="url" name="web" placeholder="https://pagina.com/" >
+        <input type="password" name="password" placeholder="Introduce tu pass" value="" required pattern="[A-Za-z0-9]{8,}" title="8 carac o +">
+        <!-- Número entre 5 y 50, de 5 en 5. Valor por defecto: 25 -->
+        <input type="number" name="numero" value="25" min="5" max="50" step="5" />
+        <!-- Su misma versión, utilizando range -->
+        <input type="range" name="numrango" value="25" min="5" max="50" step="5" />
+        <input type="date" name="fecha" min="2021-10-25" max="2022-08-25" step="2">
+        <input type="time" name="hora" min="18:00" max="21:00" step="3600">
+        <input type="datetime-local">
+        <select name="sistema" >
+            <option value="ninguno">Selecciona tu SO</option>
+            <option value="windows">Windows</option>
+            <option value="linux">Linux</option>
+            <option value="osx">MacOS</option>
+            <option value="unix">Unix</option>
+        </select>
+
+        <select name="sistema" multiple>
+            <optgroup label="Windows">
+            <option value="windows10" label="Windows 10"></option>
+            <option value="windows8" label="Windows 8"></option>
+            <option value="windows7" label="Windows 7"></option>
+            <option value="windowsVista" label="Windows Vista"></option>
+            <option value="windowsXP" label="Windows XP"></option>
+            </optgroup>
+        </select>
+        <label>¿Qué navegador usas?:</label>
+        <input list="browsers" name="myBrowser" >
+            <datalist id="browsers">
+                <option value="Chrome"></option>
+                <option value="Firefox"></option>
+                <option value="Internet Explorer"></option>
+                <option value="Opera"></option>
+                <option value="Safari"></option>
+                <option value="Microsoft Edge"></option>
+            </datalist>
+        <input type="color" name="color" value="#F4F4F4">
+        <input type="file" name="adjunto" accept=".pdf,.jpg,.png" multiple >
+        <meter min="0" max="100" value="91" low="50" high="90" ></meter>
+        <input type="submit" value="Enviar">
+        <input type="reset">
+        <button>Botón bomba</button>
+    </form>
+</body>
+</html>

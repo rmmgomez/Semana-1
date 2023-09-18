@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Mi primera página web en html5">
+    <meta name="keywords" content="web html5">
+    <meta name="author" content="Rosa Medina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo clase</title>
+    <!-- <script src="" defer></script> -->
+    <!-- <link rel="stylesheet" href=""> -->
+</head>
+<body>
+    <picture>
+        <source media="(min-width: 600px)" srcset="imagen-xl.png">
+        <source media="(min-width: 300px) and (max-width: 600px)" srcset="imagen-large.png">
+        <source media="(max-width: 50px)" srcset="imagen-small.png">
+        <img src="imagen-medium.png" alt="HTML5 logo">
+    </picture>
+    <audio>
+        <source src="audio.opus" >
+        <source src="audio.ogg" >
+        <source src="audio.mp3" >
+    </audio>
+    <video width="640" height="480">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        <source src="video.ogv" type="video/ogg">
+        <img src="imagen.png" alt="Video no soportado">
+        <track src="sub-es.vtt" srclang="es" label="Español" default>
+    </video>
+</body>
+</html>
